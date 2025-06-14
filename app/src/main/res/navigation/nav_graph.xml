@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.vmedicine.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_qrScanFragment"
+            app:destination="@id/qrScanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_prescriptionScanFragment"
+            app:destination="@id/prescriptionScanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/qrScanFragment"
+        android:name="com.example.vmedicine.QrScanFragment"
+        android:label="Scan QR Code"
+        tools:layout="@layout/fragment_qr_scan" />
+
+    <fragment
+        android:id="@+id/prescriptionScanFragment"
+        android:name="com.example.vmedicine.PrescriptionScanFragment"
+        android:label="Scan Prescription"
+        tools:layout="@layout/fragment_prescription_scan" />
+
+    <fragment
+        android:id="@+id/problemIdentifyFragment"
+        android:name="com.example.vmedicine.ProblemIdentifyFragment"
+        android:label="Problem Identified"
+        tools:layout="@layout/fragment_problem_identify" />
+
+    <fragment
+        android:id="@+id/chatBotFragment"
+        android:name="com.example.vmedicine.ChatBotFragment"
+        android:label="Chat Bot"
+        tools:layout="@layout/fragment_chat_bot" />
+</navigation>
