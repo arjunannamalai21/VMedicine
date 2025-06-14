@@ -10,9 +10,11 @@
         android:name="com.example.vmedicine.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home">
+
         <action
             android:id="@+id/action_homeFragment_to_qrScanFragment"
             app:destination="@id/qrScanFragment" />
+
         <action
             android:id="@+id/action_homeFragment_to_prescriptionScanFragment"
             app:destination="@id/prescriptionScanFragment" />
