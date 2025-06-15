@@ -1,14 +1,9 @@
 pluginManagement {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google()  // Remove content filtering for plugins
         mavenCentral()
         gradlePluginPortal()
+        // Optional: Keep other repos but without restrictive filters
         maven(url = "https://oss.sonatype.org/content/repositories/snapshots/")
         maven(url = "https://jitpack.io")
     }
