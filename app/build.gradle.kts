@@ -21,11 +21,11 @@ plugins {
 
 android {
     // ... your android block configuration (compileSdk, defaultConfig, buildFeatures, etc.)
-    namespace = "com.your.package.name" // Make sure this is set
+    namespace = "com.example.vmedicine" // Make sure this is set
     compileSdk = 34 // Or latest stable API level
 
     defaultConfig {
-        applicationId = "com.your.package.name"
+        applicationId = "com.example.vmedicine"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
