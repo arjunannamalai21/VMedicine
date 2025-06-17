@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".QRScanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"  android:paddingEnd="24dp"  android:paddingTop="24dp"  android:paddingBottom="24dp">
+        <!-- Increased padding for better spacing -->
+
+        <!-- Medicine Name Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvMedicineNameData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading medicine name..."
+            android:textSize="22sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="30dp"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
+            android:textIsSelectable="true"
+            android:lineSpacingExtra="4dp"
+            android:justificationMode="inter_word"
+            tools:targetApi="o" /> <!-- Add tools:targetApi for justificationMode -->
+
+        <!-- How to use the medicine Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to use the medicine"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvHowToUseData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fetching usage instructions..."
+            android:textSize="22sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="30dp"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
+            android:textIsSelectable="true"
+            android:lineSpacingExtra="4dp"
+            android:justificationMode="inter_word"
+            tools:targetApi="o" />
+
+        <!-- Post Reactions Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Reactions"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvPostReactionsData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fetching post reactions..."
+            android:textSize="22sp"
+            android:textColor="#333333"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
+            android:textIsSelectable="true"
+            android:lineSpacingExtra="4dp"
+            android:justificationMode="inter_word"
+            tools:targetApi="o" />
+
+        <!-- Spacer to push button to bottom -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Scan Again Button -->
+        <Button
+            android:id="@+id/btnScanAgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan Again"
+            android:textSize="18sp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
