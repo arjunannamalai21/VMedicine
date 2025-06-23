@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<full-backup-content>
-    <!-- By default, it backs up everything in shared preferences, databases, and files directories.
-         You can add <exclude> tags here if you want to prevent certain files/data from being backed up.
-         For example: <exclude domain="file" path="my_large_temp_cache_file.bin"/>
-         For now, an empty tag means back up everything default. -->
-</full-backup-content>
