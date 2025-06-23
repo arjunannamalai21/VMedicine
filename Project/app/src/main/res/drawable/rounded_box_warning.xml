@@ -1,0 +1,6 @@
+<!-- res/drawable/rounded_box_warning.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFF3E0"/> <!-- Light orange background -->
+    <corners android:radius="8dp"/>
+    <stroke android:color="#FFC107" android:width="1dp"/> <!-- Orange border -->
+</shape>

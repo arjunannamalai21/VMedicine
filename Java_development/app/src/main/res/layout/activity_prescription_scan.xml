@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    tools:context=".PrescriptionScanActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Prescription"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp" />
+
+    <ImageView
+        android:id="@+id/ivPrescriptionImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="#E0E0E0"
+        android:contentDescription="Captured Prescription Image"
+        android:layout_marginBottom="20dp"
+        android:minHeight="200dp" /> <!-- Minimum height to make it visible -->
+
+    <Button
+        android:id="@+id/btnCaptureImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture Prescription"
+        android:textSize="18sp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnProcessImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Process Image"
+        android:textSize="18sp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="gone" /> <!-- Hidden initially -->
+
+</LinearLayout>

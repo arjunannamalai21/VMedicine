@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F0F2F5"
+    tools:context=".UserSelectionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Profile"
+        android:textSize="32sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/btnUserA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login as User A"
+        android:textSize="20sp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:elevation="6dp"/>
+
+    <Button
+        android:id="@+id/btnUserB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login as User B"
+        android:textSize="20sp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button_background_secondary"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:elevation="6dp"/>
+
+    <Button
+        android:id="@+id/btnNewUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New User"
+        android:textSize="20sp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:background="@drawable/rounded_button_background_secondary"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:elevation="6dp"/>
+
+</LinearLayout>
