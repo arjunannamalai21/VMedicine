@@ -143,7 +143,7 @@ public class PrescriptionReviewActivity extends AppCompatActivity {
             // API key is left empty; Canvas will inject it for gemini-2.0-flash
             // IMPORTANT: If you are hardcoding an API key for Gemini here,
             // make sure it's correct. Otherwise, use BuildConfig or leave blank if Canvas injects.
-            String apiKey = "AIzaSyBbFGrqfLMQMQTsOu8MOKbN97ybUlGSQgA"; // Use your actual Gemini API Key here if hardcoding, or leave blank if Canvas injects
+            String apiKey = "*********"; // Use your actual Gemini API Key here if hardcoding, or leave blank if Canvas injects
             String apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + apiKey;
 
             RequestBody body = RequestBody.create(JSON, jsonPayload);
