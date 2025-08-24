@@ -219,7 +219,7 @@ public class ScannedMedicineDetailActivity extends AppCompatActivity {
             );
 
             // FIX: Set API key to empty string for Canvas to inject it.
-            String apiKey = "AIzaSyBbFGrqfLMQMQTsOu8MOKbN97ybUlGSQgA"; // Set to empty string for Canvas to inject automatically
+            String apiKey = "*********"; // Set to empty string for Canvas to inject automatically
             String apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + apiKey;
 
             RequestBody body = RequestBody.create(jsonPayload, JSON);
