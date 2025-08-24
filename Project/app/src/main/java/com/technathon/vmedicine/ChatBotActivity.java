@@ -44,7 +44,7 @@ public class ChatBotActivity extends AppCompatActivity {
 
     private static final String TAG = "ChatBotActivity";
     // IMPORTANT: Replace "YOUR_ACTUAL_GEMINI_API_KEY_HERE" with your actual Gemini API Key.
-    private static final String GEMINI_API_KEY = "AIzaSyBbFGrqfLMQMQTsOu8MOKbN97ybUlGSQgA";
+    private static final String GEMINI_API_KEY = "*************";
 
     private EditText etChatMessage;
     private Button btnSendMessage;
